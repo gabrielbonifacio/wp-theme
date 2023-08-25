@@ -1,0 +1,24 @@
+a {
+	color: $zen_wpb-color-royalblue;
+	text-decoration: none;
+	transition: all 0.3s;
+
+	&:visited {
+		color: $zen_wpb-color-green;
+	}
+
+	&:hover,
+	&:focus,
+	&:active {
+		color: $zen_wpb-color-green;
+	}
+
+	&:focus {
+		outline: thin dotted;
+	}
+
+	&:hover,
+	&:active {
+		outline: 0;
+	}
+}

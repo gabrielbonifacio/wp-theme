@@ -1,0 +1,50 @@
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+input[type="tel"],
+input[type="range"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="color"],
+textarea {
+	width: 100%;
+	color: $zen_wpb-color-light-black;
+	border: 1px solid $zen_wpb-color-gray;
+	border-radius: 5px;
+	padding: 10px;
+
+	&:focus {
+		border-color: $zen_wpb-color-royalblue;
+	}
+
+	&:focus-visible {
+		outline: none;
+	}
+}
+
+select {
+	border: 1px solid $zen_wpb-color-gray;
+	width: 100%;
+	padding: 10px;
+	background-color: transparent;
+
+	&:focus {
+		border-color: $zen_wpb-color-royalblue;
+	}
+
+	&:focus-visible {
+		outline: none;
+	}
+}
+
+textarea {
+	width: 100%;
+	max-width: 100%;
+}

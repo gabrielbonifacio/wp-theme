@@ -1,0 +1,20 @@
+.wp-caption {
+	margin-bottom: 30px;
+	max-width: 100%;
+	border: 1px solid $zen_wpb-color-gray;
+	padding: 10px;
+
+	img[class*="wp-image-"] {
+
+		@include center-block;
+	}
+
+	.wp-caption-text {
+		margin: 10px 0 0;
+	}
+}
+
+.wp-caption-text {
+	text-align: center;
+	font-size: 12px;
+}

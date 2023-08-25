@@ -1,0 +1,19 @@
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	border: 1px solid $zen_wpb-color-royalblue;
+	border-radius: 5px;
+	color: $zen_wpb-color-royalblue;
+	background-color: transparent;
+	line-height: 1;
+	padding: 10px 15px;
+	cursor: pointer;
+
+	&:hover,
+	&:active,
+	&:focus {
+		color: $zen_wpb-color-white;
+		background-color: $zen_wpb-color-royalblue;
+	}
+}

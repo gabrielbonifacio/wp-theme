@@ -1,0 +1,36 @@
+.site-header {
+	padding-top: 30px;
+	padding-bottom: 30px;
+	padding-left: 15px;
+	padding-right: 15px;
+	border-bottom: 1px solid $zen_wpb-color-gray;
+}
+
+.site-branding {
+	text-align: center;
+}
+
+/* Make sure logo link wraps around logo image. */
+.custom-logo-link {
+	display: inline-block;
+	margin-bottom: 10px;
+}
+
+.site-title {
+	font-family: $zen_wpb-heading-font-family;
+	font-size: 36px;
+	font-weight: 700;
+	margin-bottom: 10px;
+
+	a {
+		color: $zen_wpb-color-black;
+
+		&:hover {
+			color: $zen_wpb-color-royalblue;
+		}
+	}
+
+	@include medium_devices {
+		font-size: 24px;
+	}
+}

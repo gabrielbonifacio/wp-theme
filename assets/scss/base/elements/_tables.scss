@@ -1,0 +1,19 @@
+table {
+	margin: 0 0 30px;
+	width: 100%;
+	border-collapse: collapse;
+}
+
+thead {
+	background-color: $zen_wpb-color-light-gray;
+}
+
+tr {
+	border-bottom: 1px solid $zen_wpb-color-light-gray;
+}
+
+th,
+td {
+	padding: 10px;
+	text-align: center;
+}

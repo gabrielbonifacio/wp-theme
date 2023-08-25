@@ -1,0 +1,19 @@
+.zp-container {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.zp-container {
+	max-width: 1200px;
+
+	@include medium_devices {
+		max-width: 1000px;
+	}
+
+	@include small_devices {
+		max-width: 460px;
+	}
+}

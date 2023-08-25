@@ -1,0 +1,60 @@
+.sticky {
+	display: block;
+}
+
+.type-post,
+.type-page {
+	margin: 0 0 30px;
+	border: 1px solid $zen_wpb-color-gray;
+	padding: 20px 30px 0;
+}
+
+.updated:not(.published) {
+	display: none;
+}
+
+.entry-title {
+	margin-bottom: 10px;
+
+	a {
+		color: $zen_wpb-color-black;
+
+		&:hover {
+			color: $zen_wpb-color-royalblue;
+		}
+	}
+}
+
+.entry-header,
+.entry-footer {
+	margin-bottom: 30px;
+}
+
+.entry-meta {
+
+	span {
+		display: block;
+
+		span {
+			display: inline-block;
+		}
+	}
+}
+
+.entry-footer {
+
+	span {
+		display: block;
+	}
+}
+
+.page-content,
+.entry-content,
+.entry-summary {
+	margin: 0 0 30px;
+}
+
+.page-links {
+	clear: both;
+	margin: 0 0 30px;
+}

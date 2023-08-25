@@ -1,0 +1,165 @@
+.main-navigation {
+	display: block;
+	width: 100%;
+
+	ul {
+		list-style: none;
+		margin: 0;
+		padding-left: 0;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+
+		ul {
+			float: left;
+			position: absolute;
+			top: 100%;
+			left: -999999px;
+			z-index: 99999;
+			border: 1px solid $zen_wpb-color-light-gray;
+			background-color: $zen_wpb-color-white;
+			box-shadow: 0 1px 2px color.scale($zen_wpb-color-black, $alpha: -70%);
+
+			ul {
+				left: -999999px;
+				top: 0;
+
+				&:last-child {
+
+					@include medium_devices {
+						left: 0;
+					}
+				}
+			}
+
+			li {
+				border-bottom: 1px solid $zen_wpb-color-light-gray;
+
+				&:hover > ul,
+				&.focus > ul {
+					display: block;
+					left: 100%;
+				}
+
+				&:last-child {
+					border-bottom: none;
+				}
+
+				@include medium_devices {
+					border-bottom: none;
+				}
+			}
+
+			a {
+				width: 200px;
+
+				@include medium_devices {
+					width: 100%;
+				}
+			}
+
+			:hover > a,
+			.focus > {
+			}
+
+			a:hover,
+			a.focus {
+			}
+
+			@include medium_devices {
+				position: relative;
+				float: none;
+				left: 0;
+				border: none;
+				box-shadow: none;
+				background-color: transparent;
+			}
+		}
+
+		li:hover > ul,
+		li.focus > ul {
+			left: auto;
+		}
+
+		@include medium_devices {
+			display: none;
+		}
+	}
+
+	li {
+		position: relative;
+
+		&:hover > a,
+		&.focus > a {
+		}
+
+		&:first-child {
+
+			@include medium_devices {
+				border-bottom: 1px solid $zen_wpb-color-light-gray;
+			}
+		}
+	}
+
+	a {
+		display: block;
+		color: $zen_wpb-color-black;
+		padding: 10px 20px;
+		text-decoration: none;
+
+		&:hover {
+			color: $zen_wpb-color-royalblue;
+		}
+
+		@include medium_devices {
+			text-align: center;
+		}
+	}
+
+	.current_page_item > a,
+	.current-menu-item > a,
+	.current_page_ancestor > a,
+	.current-menu-ancestor > a {
+		color: $zen_wpb-color-royalblue;
+	}
+}
+
+.menu-toggle {
+	display: none;
+
+	.main-navigation.toggled & {
+		margin-bottom: 10px;
+	}
+}
+
+/* Small menu. */
+.menu-toggle,
+.main-navigation.toggled ul {
+
+	@include medium_devices {
+		display: block;
+		margin: 0 auto;
+	}
+}
+
+.comment-navigation,
+.posts-navigation,
+.post-navigation {
+
+	.site-main & {
+		margin: 0 0 30px;
+	}
+
+	.nav-links {
+		display: flex;
+	}
+
+	.nav-previous {
+		flex: 1 0 50%;
+	}
+
+	.nav-next {
+		text-align: end;
+		flex: 1 0 50%;
+	}
+}

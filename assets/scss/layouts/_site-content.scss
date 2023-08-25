@@ -1,0 +1,43 @@
+.site-content {
+	display: grid;
+	grid-template-columns: 70% auto;
+	grid-gap: 30px;
+	grid-template-areas: "content sidebar";
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+	max-width: 1200px;
+	padding-top: 60px;
+	padding-bottom: 60px;
+
+	.no-sidebar & {
+		grid-template-columns: 100%;
+		grid-template-areas:
+			"content"
+			"sidebar";
+	}
+
+	@include medium_devices {
+		max-width: 1000px;
+		padding-top: 30px;
+		padding-bottom: 0;
+		grid-template-columns: 100%;
+		grid-template-areas:
+			"content"
+			"sidebar";
+	}
+
+	@include small_devices {
+		max-width: 460px;
+	}
+}
+
+.site-main {
+	grid-area: content;
+}
+
+.widget-area {
+	grid-area: sidebar;
+}

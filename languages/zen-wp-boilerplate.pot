@@ -1,0 +1,166 @@
+# Copyright (C) 2023 Gabriel Bonifacio
+# This file is distributed under the .
+msgid ""
+msgstr ""
+"Project-Id-Version: Zen WP Boilerplate 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/zen-wp-boilerplate\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2023-08-24T16:31:13+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.8.1\n"
+"X-Domain: zen-wp-boilerplate\n"
+
+#. Theme Name of the theme
+msgid "Zen WP Boilerplate"
+msgstr ""
+
+#. Description of the theme
+msgid "Zen WordPress starter theme."
+msgstr ""
+
+#. Author of the theme
+msgid "Gabriel Bonifacio"
+msgstr ""
+
+#. translators: 1: title.
+#: comments.php:46
+msgid "One thought on &ldquo;%1$s&rdquo;"
+msgstr ""
+
+#. translators: 1: comment count number, 2: title.
+#: comments.php:52
+msgctxt "comments title"
+msgid "%1$s thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:92
+msgid "Comments are closed."
+msgstr ""
+
+#. translators: %s: search query.
+#: inc/hooks/content.php:57
+msgid "Search Results for: %s"
+msgstr ""
+
+#: inc/hooks/content.php:64
+msgid "Oops! That page can&rsquo;t be found."
+msgstr ""
+
+#: inc/hooks/content.php:113
+msgid "Nothing Found"
+msgstr ""
+
+#: inc/hooks/content.php:155
+msgid "It looks like nothing was found at this location. Maybe try one of the links below or a search?"
+msgstr ""
+
+#: inc/hooks/content.php:164
+msgid "Most Used Categories"
+msgstr ""
+
+#. translators: %1$s: smiley
+#: inc/hooks/content.php:182
+msgid "Try looking in the monthly archives. %1$s"
+msgstr ""
+
+#. translators: 1: link to WP admin new post page.
+#: inc/hooks/content.php:194
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: inc/hooks/content.php:207
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr ""
+
+#: inc/hooks/content.php:214
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr ""
+
+#: inc/hooks/content.php:258
+msgid "Previous:"
+msgstr ""
+
+#: inc/hooks/content.php:259
+msgid "Next:"
+msgstr ""
+
+#: inc/hooks/header.php:49
+msgid "Skip to content"
+msgstr ""
+
+#: inc/hooks/header.php:106
+msgid "Primary Menu"
+msgstr ""
+
+#. translators: %s: post date.
+#: inc/template-tags.php:38
+msgctxt "post date"
+msgid "Posted on %s"
+msgstr ""
+
+#. translators: %s: post author.
+#: inc/template-tags.php:57
+msgctxt "post author"
+msgid "by %s"
+msgstr ""
+
+#. translators: used between list items, there is a space after the comma
+#: inc/template-tags.php:77
+msgid ", "
+msgstr ""
+
+#. translators: 1: list of categories.
+#: inc/template-tags.php:80
+msgid "Posted in %1$s"
+msgstr ""
+
+#. translators: used between list items, there is a space after the comma
+#: inc/template-tags.php:84
+msgctxt "list item separator"
+msgid ", "
+msgstr ""
+
+#. translators: 1: list of tags.
+#: inc/template-tags.php:87
+msgid "Tagged %1$s"
+msgstr ""
+
+#. translators: %s: post title
+#: inc/template-tags.php:97
+msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
+msgstr ""
+
+#. translators: %s: Name of current post. Only visible to screen readers
+#: inc/template-tags.php:114
+#: inc/template-tags.php:142
+msgid "Edit <span class=\"screen-reader-text\">%s</span>"
+msgstr ""
+
+#: inc/theme-setup.php:60
+msgid "Primary"
+msgstr ""
+
+#: inc/widgets.php:26
+msgid "Sidebar"
+msgstr ""
+
+#: inc/widgets.php:43
+msgid "Add widgets here."
+msgstr ""
+
+#: template-parts/content-page.php:57
+#: template-parts/content-single.php:57
+#: template-parts/content.php:70
+msgid "Pages:"
+msgstr ""
+
+#. translators: %s: Name of current post. Only visible to screen readers
+#: template-parts/content.php:57
+msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
+msgstr ""

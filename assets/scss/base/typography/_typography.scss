@@ -1,0 +1,14 @@
+body,
+button,
+input,
+select,
+optgroup,
+textarea {
+	color: $zen_wpb-color-black;
+	font-family: $zen_wpb-primary-font-family;
+	font-size: 16px;
+	line-height: $zen_wpb-body-line-height;
+}
+
+@import "headings";
+@import "copy";

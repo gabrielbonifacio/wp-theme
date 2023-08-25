@@ -1,0 +1,57 @@
+p {
+	margin-top: 0;
+	margin-bottom: 30px;
+}
+
+dfn,
+cite,
+em,
+i {
+	font-style: italic;
+}
+
+blockquote {
+	margin: 0 0 30px;
+	padding: 0 30px;
+	border-left: 3px solid $zen_wpb-color-royalblue;
+}
+
+address {
+	margin: 0 0 30px;
+}
+
+pre {
+	background: $zen_wpb-color-light-gray;
+	line-height: $zen_wpb-pre-line-height;
+	margin-bottom: 30px;
+	max-width: 100%;
+	overflow: auto;
+	padding: 15px 30px;
+}
+
+code,
+kbd,
+tt,
+var {
+	color: $zen_wpb-color-light-black;
+}
+
+abbr,
+acronym {
+	border-bottom: 1px dotted $zen_wpb-color-black;
+	cursor: help;
+}
+
+mark,
+ins {
+	background: $zen_wpb-color-gray;
+	text-decoration: none;
+}
+
+small {
+	font-size: 75%;
+}
+
+big {
+	font-size: 125%;
+}

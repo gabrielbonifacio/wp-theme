@@ -1,0 +1,55 @@
+.comment-content a {
+	word-wrap: break-word;
+}
+
+.bypostauthor {
+	display: block;
+}
+
+.comment-respond {
+	margin-bottom: 30px;
+}
+
+.comment-list {
+	padding-left: 0;
+	list-style: none;
+
+	.comment-body {
+		padding-bottom: 30px;
+		border-bottom: 1px solid $zen_wpb-color-gray;
+		margin-bottom: 30px;
+	}
+
+	.reply {
+		text-align: right;
+	}
+
+	.comment-author {
+
+		img {
+			border-radius: 100%;
+			float: left;
+			margin-right: 15px;
+		}
+	}
+
+	.comment-meta {
+		margin-bottom: 30px;
+	}
+
+	.comment-content {
+		clear: both;
+	}
+
+	.children {
+		list-style: none;
+		padding-left: 20px;
+	}
+}
+
+.comment-reply-title {
+
+	small {
+		margin-left: 10px;
+	}
+}

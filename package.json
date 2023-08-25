@@ -1,0 +1,42 @@
+{
+  "name": "zen-wp-boilerplate",
+  "version": "1.0.0",
+  "description": "Zen WordPress starter theme.",
+  "author": "Gabriel Bonifacio",
+  "devDependencies": {
+    "@wordpress/scripts": "^25.0.0",
+    "autoprefixer": "^10.4.13",
+    "cross-env": "^7.0.3",
+    "css-minimizer-webpack-plugin": "^4.2.2",
+    "husky": "^8.0.2",
+    "ignore-emit-webpack-plugin": "^2.0.6",
+    "lint-staged": "^13.1.0",
+    "mini-css-extract-plugin": "^2.7.2",
+    "npx": "^10.2.2",
+    "postcss": "^8.4.20",
+    "postcss-loader": "^7.0.2",
+    "rtlcss-webpack-plugin": "^4.0.7",
+    "sass": "^1.57.1",
+    "sass-loader": "^13.2.0",
+    "terser-webpack-plugin": "^5.3.6",
+    "webpack": "^5.75.0"
+  },
+  "scripts": {
+    "lint:scss": "wp-scripts lint-style 'assets/scss/**/*.scss'",
+    "lint:js": "wp-scripts lint-js 'assets/js/*.js'",
+    "husky:install": "husky install",
+    "husky:setup": "npx husky add .husky/pre-commit \"npx lint-staged\"",
+    "start": "cross-env NODE_ENV=development webpack --watch",
+    "build": "cross-env NODE_ENV=production webpack"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.php": "composer lint:wpcs",
+    "*.scss": "wp-scripts lint-style",
+    "*.js": "wp-scripts lint-js"
+  }
+}
